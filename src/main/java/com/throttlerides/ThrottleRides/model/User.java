@@ -1,0 +1,17 @@
+package com.throttlerides.ThrottleRides.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class User {
+  private Long userId;
+  private String phoneNumber;
+  private String name;
+  private String email;
+  private String profileImage; // S3 URL
+  private String createdAt;    // Optional if tracking timestamps manually
+}
